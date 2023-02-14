@@ -83,10 +83,10 @@ class _HttpTestRouteState extends State<HttpTestRoute> {
       HttpClientRequest request = await httpClient.getUrl(Uri.parse(
           "https://api.github.com/users/mosn/repos?per_page=100&page=1"));
       //添加 headers
-      request.headers.add(
-        "Authorization",
-        "token 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",
-      );
+      // request.headers.add(
+      //   "Authorization",
+      //   "token ",
+      // );
       //等待连接服务器（会将请求信息发送给服务器）
       HttpClientResponse response = await request.close();
       //读取响应内容
