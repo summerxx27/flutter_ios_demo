@@ -85,7 +85,7 @@ class _HttpTestRouteState extends State<HttpTestRoute> {
       //添加 headers
       request.headers.add(
         "Authorization",
-        "token ",
+        "token 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",
       );
       //等待连接服务器（会将请求信息发送给服务器）
       HttpClientResponse response = await request.close();
