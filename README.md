@@ -124,3 +124,8 @@ pod install
 
 https://blog.csdn.net/jdd92/article/details/121938342
 
+
+
+### 1. flutter布局示例
+
+<img src="https://p.ipic.vip/8iid0w.png" alt="Simulator Screen Shot - iPhone 14 Pro - 2023-02-14 at 14.30.49" style="zoom:33%;" />
