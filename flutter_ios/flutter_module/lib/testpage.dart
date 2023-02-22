@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_module/diotest.dart';
 import 'dart:convert';
 import 'dart:io';
 
@@ -52,6 +53,27 @@ class _HttpTestRouteState extends State<HttpTestRoute> {
     return SingleChildScrollView(
       child: Column(
         children: <Widget>[
+          TextButton(
+            child: Text(
+              "下一页",
+              style: TextStyle(
+                  color: Colors.red,
+                  fontSize: 18.0,
+                  height: 1.2,
+                  fontFamily: "Courier",
+                  background: Paint()..color = Colors.yellow,
+                  decoration: TextDecoration.underline,
+                  decorationStyle: TextDecorationStyle.dashed),
+            ),
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) {
+                  return DioRoute();
+                }),
+              );
+            },
+          ),
           ElevatedButton(
             child: Text("获取github 数据"),
             onPressed: _loading ? null : request,
